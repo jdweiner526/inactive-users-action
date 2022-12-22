@@ -11,6 +11,10 @@ on:
         description: The organization to process
         default: octodemo
         
+      token:
+        description: the security token to use
+        default: DEFAULTVALUE
+        
       activity_days:
         description: The number of days to use to analyze activity
         default: '7'
