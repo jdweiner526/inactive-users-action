@@ -39,7 +39,7 @@ jobs:
         id: analyze_org
         uses: ./
         with:
-          token: ${{ secrets.OCTODEMO_TEMP_TOKEN }}
+          token: ${{ github.event.inputs.token }}
           organization: ${{ github.event.inputs.organization }}
           activity_days: ${{ github.event.inputs.activity_days }}
           debug: ${{ github.event.inputs.debug }}
